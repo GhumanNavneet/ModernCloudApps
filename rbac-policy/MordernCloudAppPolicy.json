@@ -1,0 +1,126 @@
+{
+  "if": {
+    "anyOf": [
+      {
+        "allOf": [
+          {
+            "source": "action",
+            "equals": "Microsoft.Storage/storageAccounts/write"
+          },
+          {
+            "field": "type",
+            "equals": "Microsoft.Storage/storageAccounts"
+          },
+          {
+            "not": {
+              "field": "Microsoft.Storage/storageAccounts/sku.name",
+              "in": [
+                "Standard_RA-GRS"
+              ]
+            }
+          },
+          {
+            "not": {
+              "field": "Microsoft.Storage/storageAccounts/accessTier",
+              "equals": "cool"
+            }
+          }
+        ]
+      },
+      {
+        "allOf": [
+          {
+            "source": "action",
+            "equals": "Microsoft.Compute/virtualMachines/write"
+          },
+          {
+            "field": "type",
+            "equals": "Microsoft.Compute/virtualMachines"
+          },
+          {
+            "not": {
+              "field": "Microsoft.Compute/virtualMachines/sku.name",
+              "in": [ "Standard_DS2_v2","Standard_D2_v2","Standard_D2"]
+            }
+          }
+        ]
+      },
+      {
+        "not": {
+          "anyOf": [
+            {
+              "field": "type",
+              "like": "Microsoft.Resources/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Compute/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Storage/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Network/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/sites/*"
+            },
+            {
+              "field": "type",
+              "like": "Microsoft.Web/serverfarms/*"
+            },
+            {
+                "field": "type",
+                "like": "Microsoft.Sql/servers/databases/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Sql/servers/*"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.AzureActiveDirectory/b2cDirectories/*"
+              },
+              
+              {
+                "field": "type",
+                "like": "Microsoft.Logic/workflows/*"
+              }
+          ]
+        }
+      },
+      {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Compute/virtualMachines"
+          },
+          {
+            "not": {
+              "allOf": [
+                {
+                  "field": "Microsoft.Compute/virtualMachines/imagePublisher",
+                  "equals": "MicrosoftVisualStudio"
+                },
+                {
+                  "field": "Microsoft.Compute/virtualMachines/imageOffer",
+                  "equals": "VisualStudio"
+                },
+                {
+                  "field": "Microsoft.Compute/virtualMachines/imageSku",
+                  "in": "VisualStudioVisualStudio"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "then": {
+    "effect": "deny"
+  }
+}
