@@ -112,7 +112,7 @@
                 },
                 {
                   "field": "Microsoft.Compute/virtualMachines/imageSku",
-                  "in": ["VS-2017-Comm-Latest-WS2016"]
+                  "equals": "VS-2017-Comm-Latest-WS2016"
                 }
               ]
             }
