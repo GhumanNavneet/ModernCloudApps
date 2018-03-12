@@ -64,32 +64,7 @@
             {
               "field": "type",
               "like": "Microsoft.Network/*"
-            },
-            {
-              "field": "type",
-              "like": "Microsoft.Web/sites/*"
-            },
-            {
-              "field": "type",
-              "like": "Microsoft.Web/serverfarms/*"
-            },
-            {
-                "field": "type",
-                "like": "Microsoft.Sql/servers/databases/*"
-              },
-              {
-                "field": "type",
-                "like": "Microsoft.Sql/servers/*"
-              },
-              {
-                "field": "type",
-                "like": "Microsoft.AzureActiveDirectory/b2cDirectories/*"
-              },
-              
-              {
-                "field": "type",
-                "like": "Microsoft.Logic/workflows/*"
-              }
+            }
           ]
         }
       },
