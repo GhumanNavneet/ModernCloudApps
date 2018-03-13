@@ -5,6 +5,8 @@
     "Description": "Custom Role for Modern Cloud Apps",
     "Actions": [
       "Microsoft.Authorization/*/read",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.Resources/subscriptions/resourceGroups/read",
       "Microsoft.Compute/locations/*",
       "Microsoft.Compute/virtualMachines/*",
       "Microsoft.Storage/storageAccounts/*",
