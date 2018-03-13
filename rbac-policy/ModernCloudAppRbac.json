@@ -1,5 +1,5 @@
 {
-  "Name": "Modern Cloud App Custom Role 1",
+  "Name": "Modern Cloud App Custom Role",
   "Id": "casb4a5a-4e7a-41be-14dv-05cje21b6739",
   "IsCustom": true,
   "Description": "Custom Role for Modern Cloud Apps",
@@ -35,6 +35,5 @@
   "NotActions": [
   ],
   "AssignableScopes": [
-    "/subscriptions/174071bf-f150-4938-ac13-1a22a312cf7a/resourceGroups/mca-with-policy"
   ]
 }
