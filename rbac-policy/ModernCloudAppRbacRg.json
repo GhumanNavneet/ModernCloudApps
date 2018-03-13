@@ -12,7 +12,9 @@
       "Microsoft.Network/networkInterfaces/*",
       "Microsoft.Network/publicIpAddresses/*",
       "Microsoft.Network/networkSecurityGroups/*",
-      "Microsoft.Network/networkInterfaces/*"
+      "Microsoft.Network/networkInterfaces/*",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.Resources/subscriptions/resourceGroups/read",
     ],
     "NotActions": [
     ],
