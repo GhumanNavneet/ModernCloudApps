@@ -10,7 +10,7 @@
     "Microsoft.Compute/virtualMachines/*",
     "Microsoft.Storage/storageAccounts/*",
     "Microsoft.Network/virtualNetworks/*",
-    "Microsoft.WebSiteSQLDatabase",
+    "Microsoft.WebSite/*",
     "Microsoft.Network/networkInterfaces/*",
     "Microsoft.Network/publicIpAddresses/*",
     "Microsoft.Network/networkSecurityGroups/*",
