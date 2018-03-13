@@ -1,38 +1,40 @@
-{  
-   "Name":"Modern Cloud Apps Custom Role",
-   "Id":"casb4a5a-4e7a-41be-13dv-04cae21b6709",
-   "IsCustom":true,
-   "Description":"Custom Role for Modern Cloud Apps",
-   "Actions":[  
-      "Microsoft.Authorization/*/read",
-      "Microsoft.Compute/locations/*",
-      "Microsoft.Compute/virtualMachines/*",
-      "Microsoft.Storage/storageAccounts/*",
-      "Microsoft.Network/virtualNetworks/*",
-      "Microsoft.Network/networkInterfaces/*",
-      "Microsoft.Network/publicIpAddresses/*",
-      "Microsoft.Network/networkSecurityGroups/*",
-      "Microsoft.Network/networkInterfaces/*",
-      "Microsoft.Sql/servers/*",
-      "Microsoft.Web/serverfarms/*",
-      "Microsoft.Web/sites/*",
-      "Microsoft.Sql/servers/auditingPolicies",
-      "Microsoft.Sql/servers/databases/*",
-      "Microsoft.Sql/servers/firewallRules/*",
-      "Microsoft.Sql/servers/encryptionProtector/*",
-      "Microsoft.Sql/servers/keys/*",
-      "Microsoft.Sql/servers/databases/advisors/*",
-      "Microsoft.Sql/servers/databases/auditingPolicies/*",
-      "Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies/*",
-      "Microsoft.Sql/servers/databases/geoBackupPolicies/*",
-      "Microsoft.Sql/servers/databases/transparentDataEncryption/*",
-      "Microsoft.AzureActiveDirectory/b2cDirectories/*",
-      "Microsoft.Logic/workflows/*"
-   ],
-   "NotActions":[  
-
-   ],
-   "AssignableScopes":[  
-
-   ]
+{
+  "Name": "Modern Cloud App Custom Role 1",
+  "Id": "casb4a5a-4e7a-41be-14dv-05cje21b6739",
+  "IsCustom": true,
+  "Description": "Custom Role for Modern Cloud Apps",
+  "Actions": [
+    "Microsoft.Authorization/*/read",
+    "microsoft.resources/deployments/validate/action",
+    "Microsoft.Compute/locations/*",
+    "Microsoft.Compute/virtualMachines/*",
+    "Microsoft.Storage/storageAccounts/*",
+    "Microsoft.Network/virtualNetworks/*",
+    "Microsoft.WebSiteSQLDatabase",
+    "Microsoft.Network/networkInterfaces/*",
+    "Microsoft.Network/publicIpAddresses/*",
+    "Microsoft.Network/networkSecurityGroups/*",
+    "Microsoft.Network/networkInterfaces/*",
+	"Microsoft.Sql/servers/*",
+	"Microsoft.Web/serverfarms/*",
+	"Microsoft.Web/sites/*",
+    "Microsoft.Sql/servers/auditingPolicies/*",
+	"Microsoft.Sql/servers/databases/*",
+	"Microsoft.Sql/servers/firewallRules/*",
+    "Microsoft.Sql/servers/encryptionProtector/*",
+    "Microsoft.Sql/servers/keys/*",
+	"Microsoft.Sql/servers/databases/advisors/*",
+    "Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies/*",
+    "Microsoft.Sql/servers/databases/auditingPolicies/*",
+    "Microsoft.Sql/servers/databases/geoBackupPolicies/*",
+    "Microsoft.Sql/servers/databases/transparentDataEncryption/*",
+    "Microsoft.AzureActiveDirectory/*",
+    "Microsoft.AzureActiveDirectory/b2cDirectories/*",
+    "Microsoft.Logic/workflows/*"
+  ],
+  "NotActions": [
+  ],
+  "AssignableScopes": [
+    "/subscriptions/174071bf-f150-4938-ac13-1a22a312cf7a/resourceGroups/mca-with-policy"
+  ]
 }
