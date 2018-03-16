@@ -80,6 +80,11 @@
             {
               "field": "type",
               "like": "Microsoft.Sql/*"
+            },
+            ,
+            {
+              "field": "type",
+              "like": "Microsoft.Insights/*"
             }
           ]
         }
