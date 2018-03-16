@@ -21,6 +21,8 @@
       "Microsoft.Sql/*",
       "Microsoft.Web/*",
       "Microsoft.Logic/*",
+      "Microsoft.Insights/",
+      "Microsoft.Insights/components/*"  
       "Microsoft.Sql/servers/auditingPolicies/*",
       "Microsoft.Sql/servers/databases/*",
       "Microsoft.Sql/servers/firewallRules/*",
